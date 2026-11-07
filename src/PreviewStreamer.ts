@@ -92,7 +92,7 @@ export class PreviewStreamer {
 
 		// add audio
 		if (this._config.audioUrl) {
-			const format = this._config.videoUrl.startsWith('http')
+			const format = this._config.audioUrl.startsWith('http')
 				? 'mpegts'
 				: 'rtp';
 			this._ffmpeg
